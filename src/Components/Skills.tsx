@@ -49,14 +49,14 @@ export default function Skills() {
             {skills
                 .map(skill =>
                     <div
-                        onMouseEnter={() => setCurrentSkill(skill.name)}
-                        onMouseLeave={() => setCurrentSkill("various technologies")}
+                        onMouseEnter={_e => setCurrentSkill(skill.name)}
+                        onMouseLeave={_e => setCurrentSkill("various technologies")}
                         style={{ color: skill.color }}>
                         {skill.element}
                     </div>
                 )}
 
         </div>
-        <div>My skills include <span>{currentSkill}.</span></div>
+        <div className='skill-text'><span>My skills include </span><span className='skillspan'>{currentSkill}.</span></div>
     </div>
 }
