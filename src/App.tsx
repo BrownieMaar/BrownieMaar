@@ -14,7 +14,7 @@ function App() {
         <h1>Here will be other platforms where you can check me out.</h1>
       </div>
       <div className='card'>
-        <h1>foo</h1>
+        <h1>Thanks for checking me out!</h1>
       </div>
     </div>
   )

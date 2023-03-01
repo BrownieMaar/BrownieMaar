@@ -45,12 +45,11 @@ export default function Skills() {
     ]
 
     return <div className='card skillpage' id='skillpage'>
-        <div className="logos">
+        <div className="logos" onMouseLeave={_e => setCurrentSkill("various technologies")}>
             {skills
                 .map(skill =>
                     <div
                         onMouseEnter={_e => setCurrentSkill(skill.name)}
-                        onMouseLeave={_e => setCurrentSkill("various technologies")}
                         style={{ color: skill.color }}>
                         {skill.element}
                     </div>
