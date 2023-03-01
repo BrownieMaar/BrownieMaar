@@ -49,6 +49,7 @@ export default function Skills() {
             {skills
                 .map(skill =>
                     <div
+                        key={skill.name}
                         onMouseEnter={_e => setCurrentSkill(skill.name)}
                         style={{ color: skill.color }}>
                         {skill.element}
