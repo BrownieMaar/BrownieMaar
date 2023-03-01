@@ -5,7 +5,7 @@
     gap: 3rem;
 }
 
-.links > div {
+.links>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,12 +14,12 @@
     user-select: none;
 }
 
-.links > div:hover {
+.links>div:hover {
     transform: scale(1.2);
     transition: all .1s;
 }
 
-.links > div > span {
+.links>div>span {
     font-size: 1.4rem;
     font-weight: bold;
     margin-top: .5rem;
