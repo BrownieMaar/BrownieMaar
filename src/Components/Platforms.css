@@ -1,0 +1,32 @@
+.links {
+    display: flex;
+    flex-direction: row;
+    font-size: 4rem;
+    gap: 3rem;
+}
+
+.links>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .1s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.links>div:hover {
+    transform: scale(1.2);
+    transition: all .1s;
+}
+
+.links>div>span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: .5rem;
+}
+
+.platforms {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
