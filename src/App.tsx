@@ -7,7 +7,9 @@ function App() {
 
   return (
     <div className="App" id='App'>
-      <div className="hoverlog"><p>Hi.</p></div>
+      <div className='card red'>
+        <h1>foo</h1>
+      </div>
       <div className='card skillpage'>
         <div className="logos">
           <div onMouseEnter={() => setCurrentSkill("HTML 5")} style={{color: "#e54c21"}}><SiHtml5 /></div>
@@ -20,13 +22,10 @@ function App() {
         </div>
           <div style={{display: "block"}}>He understands <span style={{width: "10rem", display: "block"}}>{currentSkill}.</span></div>
       </div>
-      <div className='card red'>
+      <div className='card yellow'>
         <h1>foo</h1>
       </div>
       <div className='card'>
-        <h1>foo</h1>
-      </div>
-      <div className='card yellow'>
         <h1>foo</h1>
       </div>
     </div>

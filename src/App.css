@@ -55,26 +55,6 @@
   align-items: center;
 }
 
-.hoverlog {
-  background-color: white;
-  
-  border: 2px dotted black;
-  border-radius: 5px;
-  
-  height: 4rem;
-  width: 10rem;
-  
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  
-  opacity: .8;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .blue {
   background-color: lightblue;
 }
