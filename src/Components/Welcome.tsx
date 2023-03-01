@@ -3,7 +3,7 @@ export default function Welcome() {
     const scrollToId = (id: string): void => {
         document.getElementById(id)!.scrollIntoView({ behavior: "smooth" })
     }
-    
+
     return <div className='card red welcome'>
         <div className='contact-card'>
             <img src="./headshot.jpg" alt="Headshot of Márton Barna" />
