@@ -1,42 +1,92 @@
+:root {
+  overflow-x: hidden;
+}
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+  width: 100%;
 }
 
 .card {
-  padding: 2em;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
 }
 
-.read-the-docs {
-  color: #888;
+.App {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  overflow-x: hidden;
+  background-image: radial-gradient(lightgray 15%, transparent 16%);
+  background-size: 20px 20px;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 1rem;
+  gap: 3rem;
+  font-size: 5rem;
+}
+
+.logos>div>* {
+  color: black;
+  transition: all .2s;
+}
+
+.logos>div>*:hover {
+  color: inherit;
+  transition: all .2s;
+  transform: scale(1.2);
+}
+
+.skillpage {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hoverlog {
+  background-color: white;
+  
+  border: 2px dotted black;
+  border-radius: 5px;
+  
+  height: 4rem;
+  width: 10rem;
+  
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  
+  opacity: .8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue {
+  background-color: lightblue;
+}
+
+.red {
+  background-color: lightcoral;
+}
+
+.yellow {
+  background-color: lightyellow;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
