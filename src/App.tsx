@@ -1,6 +1,7 @@
 import './App.css';
-import Welcome from './Components/welcome';
+import Platforms from './Components/Platforms';
 import Skills from './Components/Skills';
+import Welcome from './Components/Welcome';
 
 function App() {
 
@@ -10,9 +11,7 @@ function App() {
     <div className="App" id='App'>
       <Welcome />
       <Skills />
-      <div className='card yellow' id='platforms'>
-        <h1>Here will be other platforms where you can check me out.</h1>
-      </div>
+      <Platforms />
       <div className='card'>
         <h1>Thanks for checking me out!</h1>
       </div>
