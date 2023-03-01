@@ -16,9 +16,9 @@ export default function Welcome() {
         <div className="jumpto">
             Learn more about
             my <span className="jump"
-                onClick={_e => scrollToId("skillpage")}>skills</span>, <span className="jump"
+                onClick={_e => scrollToId("skillpage")}>skills</span> or <span className="jump"
                     onClick={_e => scrollToId("platforms")}
-                >references</span> or <span className="jump">hobbies</span> by
+                >references</span> by
             clicking on them, or scrolling down.
         </div>
     </div>
