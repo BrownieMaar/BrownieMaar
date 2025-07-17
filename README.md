@@ -1,8 +1,9 @@
-- 👋 Hi, I’m @BrownieMaar
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+## Hi, I'm Márton BARNA.
+### This is my GitHub profile.
+
+If you want to check me out, look at my [Online potfolio.](https://browniemaar.github.io/BrownieMaar/)
+
+You can check out the page's repository, you can do it [here.](https://github.com/BrownieMaar/BrownieMaar)
 
 <!---
 BrownieMaar/BrownieMaar is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
