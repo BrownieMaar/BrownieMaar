@@ -21,10 +21,8 @@ RUN \
 COPY app ./app
 COPY public ./public
 COPY components ./components
-COPY util ./util
 COPY tsconfig.json .
-COPY next.config.js .
-COPY tailwind.config.ts .
+COPY next.config.ts .
 COPY postcss.config.mjs .
 
 # Environment variables must be present at build time
