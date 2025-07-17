@@ -1,6 +1,7 @@
+"use client"
+
 import { useState } from 'react';
-import { SiCss3, SiHtml5, SiJava, SiJavascript, SiNodedotjs, SiReact, SiSpring } from "react-icons/si";
-import "./Skills.css"
+import { SiCss3, SiHtml5, SiJavascript, SiNodedotjs, SiReact, SiSpring } from "react-icons/si";
 
 export default function Skills() {
     const [currentSkill, setCurrentSkill] = useState("various technologies")
@@ -31,11 +32,6 @@ export default function Skills() {
                 "React.js",
             color: "#5ed3f3",
             element: <SiReact />
-        },
-        {
-            name: "Java",
-            color: "#e51f24",
-            element: <SiJava />
         },
         {
             name: "Spring",
