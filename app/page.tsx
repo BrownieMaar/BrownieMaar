@@ -1,6 +1,6 @@
-import Platforms from "@/componentss/Platforms";
-import Skills from "@/componentss/Skills";
-import Welcome from "@/componentss/Welcome";
+import Platforms from "@/components/Platforms";
+import Skills from "@/components/Skills";
+import Welcome from "@/components/Welcome";
 
 export default function Home() {
   return (
