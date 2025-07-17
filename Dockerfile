@@ -22,6 +22,7 @@ COPY app ./app
 COPY public ./public
 COPY components ./components
 COPY tsconfig.json .
+COPY tailwind.config.ts .
 COPY next.config.ts .
 COPY postcss.config.mjs .
 
