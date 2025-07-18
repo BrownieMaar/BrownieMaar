@@ -53,6 +53,6 @@ export default function Skills() {
                 )}
 
         </div>
-        <div className='skill-text'><span>My skills include </span><span className='skillspan'>{currentSkill}.</span></div>
+        <div className='skill-text'><span>My skills include </span><span className='skillspan text-center'>{currentSkill}.</span></div>
     </div>
 }

@@ -9,7 +9,7 @@ export default function Home() {
       <Skills />
       <Platforms />
       <div className='card'>
-        <h2 className="text-6xl font-bold">Thanks for checking me out!</h2>
+        <h2 className="text-5xl md:text-6xl font-bold text-center">Thanks for checking me out!</h2>
       </div>
     </div>
   );

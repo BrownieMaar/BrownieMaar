@@ -81,12 +81,6 @@ body {
   justify-content: center;
 }
 
-.contact-card > .column-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  align-items: flex-start;
-}
 .contact-card > .column-flex > * {
   margin: 0;
 }
