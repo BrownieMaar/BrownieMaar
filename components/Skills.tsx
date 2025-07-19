@@ -8,7 +8,8 @@ export default function Skills() {
         {
             img: "/tech-icons/html.png",
             name: "HTML",
-            color: "#e54c21"
+            color: "#e54c21",
+            fry: true
         },
         {
             img: "/tech-icons/css.png",
@@ -35,7 +36,8 @@ export default function Skills() {
         {
             img: "/tech-icons/node.png",
             name: "Node.js",
-            color: "#7fc728"
+            color: "#7fc728",
+            fry: true
         },
         {
             img: "/tech-icons/ts.png",
@@ -55,7 +57,8 @@ export default function Skills() {
         {
             img: "/tech-icons/git.png",
             name: "Git",
-            color: "#f05032"
+            color: "#f05032",
+            fry: true
         },
         {
             img: "/tech-icons/shell.png",
@@ -70,7 +73,8 @@ export default function Skills() {
         {
             img: "/tech-icons/cicd.png",
             name: "CI/CD",
-            color: "#f7e018"
+            color: "#f7e018",
+            fry: true
         },
         {
             img: "/tech-icons/sql.png",
@@ -93,11 +97,11 @@ export default function Skills() {
                         key={skill.name}
                         onMouseEnter={_e => setCurrentSkill(skill.name)}
                         style={{ color: skill.color }}>
-                        <img src={skill.img} alt={skill.name} className={`w-20 aspect-square grayscale ${skill.fry ? "contrast-[3] brightness-[0.25]" : "contrast-[5] brightness-75"} hover:grayscale-0 hover:contrast-100 hover:brightness-100`} />
+                        <img src={skill.img} alt={skill.name} className={`w-20 aspect-square grayscale ${skill.fry ? "contrast-[3] brightness-[0.25]" : "contrast-[5] brightness-[.7] "} hover:grayscale-0 hover:contrast-100 hover:brightness-100`} />
                     </div>
                 )}
 
         </div>
-        <div className='skill-text'><span>My skills include </span><span className='skillspan text-center'>{currentSkill}.</span></div>
+        <div className='skill-text'><span>My skills include </span><span className='skillspan text-center'>{currentSkill}</span></div>
     </div>
 }
