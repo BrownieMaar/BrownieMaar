@@ -1,5 +1,7 @@
 "use client"
 
+import Image from 'next/image';
+
 export default function Welcome() {
 
     const scrollToId = (e: React.MouseEvent<HTMLAnchorElement>): void => {
@@ -10,7 +12,12 @@ export default function Welcome() {
 
     return <div className='card red welcome'>
         <div className='contact-card'>
-            <img src="./headshot.jpg" alt="Headshot of Márton Barna" />
+            <Image
+                src="/headshot.jpg"
+                alt="Headshot of Márton Barna"
+                width={200}
+                height={200}
+            />
             <div className='flex flex-col gap-0.5 items-start justify-between'>
                 <p className="text-3xl sm:text-4xl font-bold">Hi, I&apos;m</p>
                 <h1 className="text-5xl sm:text-6xl font-bold text-center">Márton BARNA,</h1>
