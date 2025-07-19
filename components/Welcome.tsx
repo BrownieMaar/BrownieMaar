@@ -29,7 +29,7 @@ export default function Welcome() {
             my <a href="#skillpage" className="jump"
                 onClick={(e) => scrollToId(e)}>skills</a> or <a href="#platforms" className="jump"
                     onClick={(e) => scrollToId(e)}
-                >references</a> by
+                >other resources</a> by
             clicking on them, or scrolling down.
         </div>
     </div>
