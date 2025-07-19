@@ -7,7 +7,7 @@ export default function Skills() {
     const skills = [
         {
             img: "/tech-icons/html.png",
-            name: "HTML 5",
+            name: "HTML",
             color: "#e54c21"
         },
         {
