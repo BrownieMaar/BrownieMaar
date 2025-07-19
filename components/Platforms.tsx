@@ -8,7 +8,7 @@ export default function Platforms() {
     }
 
     return <div className='card yellow platforms' id='platforms'>
-        <h1>I&apos;m also available on these platforms:</h1>
+        <h2 className="text-2xl">I&apos;m also available on these platforms:</h2>
         <div className="links">
             <div onClick={_e => anchorizer("https://www.linkedin.com/in/m%C3%A1rton-barna-43653b236/")}>
                 <SiLinkedin />

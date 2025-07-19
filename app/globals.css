@@ -98,7 +98,6 @@ body {
 }
 
 a.jump {
-  background-color: rgba(255, 255, 255, 0.15);
   padding: .2rem .4rem;
   border-radius: 10px;
   border: 1px solid black;
@@ -117,14 +116,12 @@ a.jump:hover {
 }
 
 .logos {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   padding: 0 1rem;
-  gap: 1.5rem;
+  gap: 2.5rem;
   font-size: 5rem;
-  max-width: 25rem;
+  max-width: 35rem;
 }
 
 .logos>div>* {
@@ -141,10 +138,24 @@ a.jump:hover {
 .skillpage {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
+  padding-inline: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .skillpage {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .logos {
+    grid-template-columns: repeat(3, 1fr);
+
+    img {
+      width: 60px;  
+    }
+  }
 }
 
 .skill-text {
