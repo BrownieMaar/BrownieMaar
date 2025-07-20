@@ -13,7 +13,7 @@ export default function Welcome() {
     return <div className='card red welcome'>
         <div className='contact-card'>
             <Image
-                src="/headshot.jpg"
+                src="/headshot_low.jpg"
                 alt="Headshot of Márton Barna"
                 width={200}
                 height={200}
