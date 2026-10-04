@@ -97,7 +97,7 @@ export default function Skills() {
                         key={skill.name}
                         onMouseEnter={_e => setCurrentSkill(skill.name)}
                         style={{ color: skill.color }}>
-                        <img src={skill.img} alt={skill.name} className={`w-20 aspect-square grayscale ${skill.fry ? "contrast-[3] brightness-[0.25]" : "contrast-[5] brightness-[.7] "} hover:grayscale-0 hover:contrast-100 hover:brightness-100`} />
+                        <img src={skill.img} alt={skill.name} className={`w-20 aspect-square grayscale ${skill.fry ? "contrast-[3] brightness-[0.25]" : "contrast-[5] brightness-[.7]"} dark:invert hover:grayscale-0 hover:contrast-100 hover:brightness-100 hover:invert-0`} />
                     </div>
                 )}
 
