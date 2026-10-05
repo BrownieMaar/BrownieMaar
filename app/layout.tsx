@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "devicon/devicon.min.css";
 import "./globals.css";
 
 export const metadata: Metadata = {

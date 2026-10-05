@@ -1,92 +1,26 @@
 "use client"
 
 import { useState } from 'react';
+import { FaMagnifyingGlassChart } from "react-icons/fa6";
 
 export default function Skills() {
     const [currentSkill, setCurrentSkill] = useState("various technologies")
     const skills = [
-        {
-            img: "/tech-icons/html.png",
-            name: "HTML",
-            color: "#e54c21",
-            fry: true
-        },
-        {
-            img: "/tech-icons/css.png",
-            name: "CSS",
-            color: "#214ce5"
-        },
-        {
-            img: "/tech-icons/js.png",
-            name: "JavaScript",
-            color: "#f7e018",
-            fry: true,
-        },
-        {
-            img: "/tech-icons/seo.png",
-            name: "SEO",
-            color: "#7fc728"
-        },
-        {
-            img: "/tech-icons/react.png",
-            name: "React.js",
-            color: "#5ed3f3",
-            fry: true
-        },
-        {
-            img: "/tech-icons/node.png",
-            name: "Node.js",
-            color: "#7fc728",
-            fry: true
-        },
-        {
-            img: "/tech-icons/ts.png",
-            name: "TypeScript",
-            color: "#007acc"
-        },
-        {
-            img: "/tech-icons/express.png",
-            name: "Express.js",
-            color: "#7fc728"
-        },
-        {
-            img: "/tech-icons/next.png",
-            name: "Next.js",
-            color: "#000000"
-        },
-        {
-            img: "/tech-icons/git.png",
-            name: "Git",
-            color: "#f05032",
-            fry: true
-        },
-        {
-            img: "/tech-icons/shell.png",
-            name: "Shell",
-            color: "#4eaa1f"
-        },
-        {
-            img: "/tech-icons/docker.png",
-            name: "Docker",
-            color: "#2496ed"
-        },
-        {
-            img: "/tech-icons/cicd.png",
-            name: "CI/CD",
-            color: "#f7e018",
-            fry: true
-        },
-        {
-            img: "/tech-icons/sql.png",
-            name: "SQL",
-            color: "#00758f"
-        },
-        {
-            img: "/tech-icons/nosql.png",
-            name: "NoSQL",
-            color: "#4eaa1f",
-            fry: true
-        }
+        { icon: "html5-plain", name: "HTML", color: "#e54c21" },
+        { icon: "css3-plain", name: "CSS", color: "#214ce5" },
+        { icon: "javascript-plain", name: "JavaScript", color: "#f7e018" },
+        { icon: null, name: "SEO", color: "#7fc728" },
+        { icon: "react-plain", name: "React.js", color: "#5ed3f3" },
+        { icon: "nodejs-plain", name: "Node.js", color: "#7fc728" },
+        { icon: "typescript-original", name: "TypeScript", color: "#007acc" },
+        { icon: "express-original", name: "Express.js", color: "#7fc728" },
+        { icon: "nextjs-plain", name: "Next.js", color: "var(--logo-next)" },
+        { icon: "git-plain", name: "Git", color: "#f05032" },
+        { icon: "bash-plain", name: "Shell", color: "#4eaa1f" },
+        { icon: "docker-plain", name: "Docker", color: "#2496ed" },
+        { icon: "githubactions-plain", name: "CI/CD", color: "#2088ff" },
+        { icon: "mysql-plain", name: "SQL", color: "#00758f" },
+        { icon: "mongodb-plain", name: "NoSQL", color: "#4eaa1f" }
     ]
 
     return <div className='card skillpage' id='skillpage'>
@@ -97,7 +31,9 @@ export default function Skills() {
                         key={skill.name}
                         onMouseEnter={_e => setCurrentSkill(skill.name)}
                         style={{ color: skill.color }}>
-                        <img src={skill.img} alt={skill.name} className={`w-20 aspect-square grayscale ${skill.fry ? "contrast-[3] brightness-[0.25]" : "contrast-[5] brightness-[.7] "} hover:grayscale-0 hover:contrast-100 hover:brightness-100`} />
+                        {skill.icon
+                            ? <i className={`devicon-${skill.icon}`} aria-label={skill.name}></i>
+                            : <FaMagnifyingGlassChart aria-label={skill.name} />}
                     </div>
                 )}
 

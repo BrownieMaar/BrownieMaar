@@ -14,8 +14,14 @@ body {
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --background: #242424;
+  --foreground: rgba(255, 255, 255, 0.87);
+  --card-red: #7d4a4a;
+  --card-yellow: #3a3829;
+  --card-blue: #2c4250;
+  --logo-next: #ffffff;
+  color: var(--foreground);
+  background-color: var(--background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,8 +34,12 @@ body {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --background: #ffffff;
+    --foreground: #213547;
+    --card-red: lightcoral;
+    --card-yellow: lightyellow;
+    --card-blue: lightblue;
+    --logo-next: #000000;
   }
   a:hover {
     color: #747bff;
@@ -58,15 +68,15 @@ body {
 }
 
 .blue {
-  background-color: lightblue;
+  background-color: var(--card-blue);
 }
 
 .red {
-  background-color: lightcoral;
+  background-color: var(--card-red);
 }
 
 .yellow {
-  background-color: lightyellow;
+  background-color: var(--card-yellow);
 }
 
 ::-webkit-scrollbar {
@@ -100,7 +110,7 @@ body {
 a.jump {
   padding: .2rem .4rem;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid currentColor;
   cursor: pointer;
   user-select: none;
 }
@@ -125,7 +135,8 @@ a.jump:hover {
 }
 
 .logos>div>* {
-  color: black;
+  display: inline-block;
+  color: var(--foreground);
   transition: all .2s;
 }
 
@@ -151,10 +162,7 @@ a.jump:hover {
   }
   .logos {
     grid-template-columns: repeat(3, 1fr);
-
-    img {
-      width: 60px;  
-    }
+    font-size: 3.75rem;
   }
 }
 
