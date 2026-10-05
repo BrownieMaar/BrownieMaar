@@ -1,92 +1,27 @@
 "use client"
 
 import { useState } from 'react';
+import { SiCss3, SiDocker, SiExpress, SiGit, SiGithubactions, SiGnubash, SiHtml5, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiReact, SiTypescript } from "react-icons/si";
+import { FaMagnifyingGlassChart } from "react-icons/fa6";
 
 export default function Skills() {
     const [currentSkill, setCurrentSkill] = useState("various technologies")
     const skills = [
-        {
-            img: "/tech-icons/html.png",
-            name: "HTML",
-            color: "#e54c21",
-            fry: true
-        },
-        {
-            img: "/tech-icons/css.png",
-            name: "CSS",
-            color: "#214ce5"
-        },
-        {
-            img: "/tech-icons/js.png",
-            name: "JavaScript",
-            color: "#f7e018",
-            fry: true,
-        },
-        {
-            img: "/tech-icons/seo.png",
-            name: "SEO",
-            color: "#7fc728"
-        },
-        {
-            img: "/tech-icons/react.png",
-            name: "React.js",
-            color: "#5ed3f3",
-            fry: true
-        },
-        {
-            img: "/tech-icons/node.png",
-            name: "Node.js",
-            color: "#7fc728",
-            fry: true
-        },
-        {
-            img: "/tech-icons/ts.png",
-            name: "TypeScript",
-            color: "#007acc"
-        },
-        {
-            img: "/tech-icons/express.png",
-            name: "Express.js",
-            color: "#7fc728"
-        },
-        {
-            img: "/tech-icons/next.png",
-            name: "Next.js",
-            color: "#000000"
-        },
-        {
-            img: "/tech-icons/git.png",
-            name: "Git",
-            color: "#f05032",
-            fry: true
-        },
-        {
-            img: "/tech-icons/shell.png",
-            name: "Shell",
-            color: "#4eaa1f"
-        },
-        {
-            img: "/tech-icons/docker.png",
-            name: "Docker",
-            color: "#2496ed"
-        },
-        {
-            img: "/tech-icons/cicd.png",
-            name: "CI/CD",
-            color: "#f7e018",
-            fry: true
-        },
-        {
-            img: "/tech-icons/sql.png",
-            name: "SQL",
-            color: "#00758f"
-        },
-        {
-            img: "/tech-icons/nosql.png",
-            name: "NoSQL",
-            color: "#4eaa1f",
-            fry: true
-        }
+        { Icon: SiHtml5, name: "HTML", color: "#e54c21" },
+        { Icon: SiCss3, name: "CSS", color: "#214ce5" },
+        { Icon: SiJavascript, name: "JavaScript", color: "#f7e018" },
+        { Icon: FaMagnifyingGlassChart, name: "SEO", color: "#7fc728" },
+        { Icon: SiReact, name: "React.js", color: "#5ed3f3" },
+        { Icon: SiNodedotjs, name: "Node.js", color: "#7fc728" },
+        { Icon: SiTypescript, name: "TypeScript", color: "#007acc" },
+        { Icon: SiExpress, name: "Express.js", color: "#7fc728" },
+        { Icon: SiNextdotjs, name: "Next.js", color: "#000000" },
+        { Icon: SiGit, name: "Git", color: "#f05032" },
+        { Icon: SiGnubash, name: "Shell", color: "#4eaa1f" },
+        { Icon: SiDocker, name: "Docker", color: "#2496ed" },
+        { Icon: SiGithubactions, name: "CI/CD", color: "#f7e018" },
+        { Icon: SiMysql, name: "SQL", color: "#00758f" },
+        { Icon: SiMongodb, name: "NoSQL", color: "#4eaa1f" }
     ]
 
     return <div className='card skillpage' id='skillpage'>
@@ -97,7 +32,7 @@ export default function Skills() {
                         key={skill.name}
                         onMouseEnter={_e => setCurrentSkill(skill.name)}
                         style={{ color: skill.color }}>
-                        <img src={skill.img} alt={skill.name} className={`w-20 aspect-square grayscale ${skill.fry ? "contrast-[3] brightness-[0.25]" : "contrast-[5] brightness-[.7]"} dark:invert hover:grayscale-0 hover:contrast-100 hover:brightness-100 hover:invert-0`} />
+                        <skill.Icon aria-label={skill.name} />
                     </div>
                 )}
 

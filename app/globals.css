@@ -133,7 +133,7 @@ a.jump:hover {
 }
 
 .logos>div>* {
-  color: black;
+  color: var(--foreground);
   transition: all .2s;
 }
 
@@ -159,10 +159,7 @@ a.jump:hover {
   }
   .logos {
     grid-template-columns: repeat(3, 1fr);
-
-    img {
-      width: 60px;  
-    }
+    font-size: 3.75rem;
   }
 }
 
