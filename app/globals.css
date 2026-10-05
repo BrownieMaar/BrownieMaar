@@ -135,6 +135,8 @@ a.jump:hover {
 }
 
 .logos>div>* {
+  display: inline-block;
+  color: var(--foreground);
   transition: all .2s;
 }
 
