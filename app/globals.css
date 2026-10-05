@@ -19,6 +19,7 @@ body {
   --card-red: #7d4a4a;
   --card-yellow: #3a3829;
   --card-blue: #2c4250;
+  --logo-next: #ffffff;
   color: var(--foreground);
   background-color: var(--background);
 
@@ -38,6 +39,7 @@ body {
     --card-red: lightcoral;
     --card-yellow: lightyellow;
     --card-blue: lightblue;
+    --logo-next: #000000;
   }
   a:hover {
     color: #747bff;
@@ -133,7 +135,6 @@ a.jump:hover {
 }
 
 .logos>div>* {
-  color: var(--foreground);
   transition: all .2s;
 }
 
